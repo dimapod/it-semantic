@@ -1,0 +1,23 @@
+<div ng-controller="googlenewsCtrl">
+  <h1>Entities</h1>
+
+  <form role="form" ng-submit="submitEntitiesRequest()">
+    <div class="form-group">
+      <label for="entitiesText">Text to analyse</label>
+      <textarea id="entitiesText" ng-model="entitiesRequest.text" class="form-control" rows="6"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" ng-disabled="!entitiesRequest.text.length">
+      Submit
+    </button>
+    <button class="btn btn-default" ng-click="entitiesRequest.text=''; entitiesResult=undefined">Clean</button>
+    <img src="img/spinner.gif" ng-show="hasPendingRequests()">
+  </form>
+
+  <div class="entities-result" ng-show="entitiesResult">
+    <h3>Result</h3>
+    <p>
+      <textarea id="entitiesResult" ng-model="entitiesResult" class="form-control" rows="15" disabled></textarea>
+    </p>
+    <button ng-click="entitiesResult=undefined" class="btn btn-default">Hide</button>
+  </div>
+</div>

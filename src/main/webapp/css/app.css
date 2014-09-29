@@ -1,0 +1,175 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\000032}}
+body {
+  margin-top: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\000036}}
+[contenteditable="true"]:focus {
+  outline: none;
+  text-overflow: clip;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000313}}
+#executions {
+  display: inline-block;
+  width: 28%;
+  float: left;
+  min-width: 180px;
+  padding-right: 2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000320}}
+#executions .execution-badge {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000325}}
+#suites {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+@media screen and (max-width: 650px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000332}}
+  #executions, #suites {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000339}}
+.icon-spinner {
+  background-image: url("../img/spinner.gif");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000344}}
+.abn-tree-holder {
+  /*
+  ------------------------------------------
+  Angular 1.2.0 Animation
+  */
+  /*
+     end animation stuff
+  -----------------------------------------
+     begin normal css stuff
+  */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000346}}
+.abn-tree-holder .abn-tree-animate-enter,
+.abn-tree-holder li.abn-tree-row.ng-enter {
+  transition: 200ms linear all;
+  position: relative;
+  display: block;
+  opacity: 0;
+  max-height: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000355}}
+.abn-tree-holder .abn-tree-animate-enter.abn-tree-animate-enter-active,
+.abn-tree-holder li.abn-tree-row.ng-enter-active {
+  opacity: 1;
+  max-height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000361}}
+.abn-tree-holder .abn-tree-animate-leave,
+.abn-tree-holder li.abn-tree-row.ng-leave {
+  transition: 200ms linear all;
+  position: relative;
+  display: block;
+  height: 30px;
+  max-height: 30px;
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000371}}
+.abn-tree-holder .abn-tree-animate-leave.abn-tree-animate-leave-active,
+.abn-tree-holder li.abn-tree-row.ng-leave-active {
+  height: 0px;
+  max-height: 0px;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000394}}
+.abn-tree-holder ul.nav.abn-tree {
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\0000398}}
+.abn-tree-holder ul.nav.abn-tree li.abn-tree-row {
+  padding: 0px;
+  margin: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003101}}
+.abn-tree-holder ul.nav.abn-tree li.abn-tree-row a {
+  padding: 3px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003105}}
+.abn-tree-holder ul.nav.abn-tree li.abn-tree-row a.tree-action {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003111}}
+.abn-tree-holder ul.nav.abn-tree i.indented {
+  padding: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003115}}
+.abn-tree-holder ul.nav.abn-tree .level-1 .indented {
+  position: relative;
+  left: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003120}}
+.abn-tree-holder ul.nav.abn-tree .level-2 .indented {
+  position: relative;
+  left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003125}}
+.abn-tree-holder ul.nav.abn-tree .level-3 .indented {
+  position: relative;
+  left: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003130}}
+.abn-tree-holder ul.nav.abn-tree .level-4 .indented {
+  position: relative;
+  left: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003135}}
+.abn-tree-holder ul.nav.abn-tree .level-5 .indented {
+  position: relative;
+  left: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003140}}
+.abn-tree-holder ul.nav.abn-tree .level-6 .indented {
+  position: relative;
+  left: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003145}}
+.abn-tree-holder ul.nav.abn-tree .level-7 .indented {
+  position: relative;
+  left: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003150}}
+.abn-tree-holder ul.nav.abn-tree .level-8 .indented {
+  position: relative;
+  left: 120px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003155}}
+.abn-tree-holder ul.nav.abn-tree .level-9 .indented {
+  position: relative;
+  left: 140px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003164}}
+.nav > li:hover, .nav > li:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003169}}
+.nav > li a {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dpodyachiy\/Development\/SFR\/workspace\/order-integration-tests\/src\/main\/webapp\/scss\/app\.scss}line{font-family:\00003171}}
+.nav > li a:hover, .nav > li a:focus {
+  background-color: transparent;
+}
+
+.form-control.sentiment-3, .form-control.sentiment-4 {
+    background-color: darkseagreen;
+}
+.form-control.sentiment-1, .form-control.sentiment-2 {
+    background-color: rgb(255, 188, 188);;
+}

@@ -1,0 +1,113 @@
+<div class="navbar navbar-inverse navbar-fixed-top order-console-navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console">ecom360 console</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/dashboard/system">Information syst&egrave;me</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/dashboard/statistic">Statistique</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/eagle/tattle/dashboard.php">Dashboards Eagle</a>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/eagle/tattle/index.php">Alertes Eagle</a>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/scheduler/console/index.html">Jobs Qron</a>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/orders">Recherche</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/search/">Recherche par Solr</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/upload/order">Traitement en masse ( NOUVEAU FORMAT DE SIGNALISATION )</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/logistics">Suivi logistique</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/batch">Suivi des Batchs</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/controlefraude-backoffice/">Controle fraude</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jms
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/jms/hornetq1/index">Recherche on hornetq1</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/jms/hornetq5/index">Recherche on hornetq5</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/dlq/hornetq1/index">Dead Letter Queue on hornetq1</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/dlq/hornetq5/index">Dead Letter Queue on hornetq5</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/upload/jms">Traitement en masse ( ANCIENNE STRUCTURE DE MESSAGE JMS )</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/upload/new_jms">Traitement en masse ( NOUVEAU FORMAT )</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bases
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/bases/sapdistri">SAP Distri</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/bases/smkra">Test SMKRA</a>
+                            </li>
+                            <li>
+                                <a href="http://admin-ecom.sfr.fr.casepp.sfr.fr/orders/console/bases/presto">Test PRESTO</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form id="rapidSearch" class="navbar-form pull-right">
+                    <input class="span2" placeholder="orderNumber" id="orderNumber" name="orderNumber" type="text" />
+                    <button type="submit" class="btn">Acc&eacute;der au workflow</button>
+                </form>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#rapidSearch").submit(function() {
+            var n = $("#orderNumber").val();
+            document.location = '/orders/console/orders' + "/" + n;
+            return false;
+        });
+    </script>
+</div>

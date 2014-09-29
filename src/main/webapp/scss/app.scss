@@ -1,0 +1,185 @@
+
+body {
+  margin-top: 60px;
+}
+
+[contenteditable="true"]:focus {
+  outline: none;
+  text-overflow: clip;
+}
+
+$padding: 2%;
+
+#executions {
+  display: inline-block;
+  width: 30% - $padding;
+  float: left;
+  min-width: 180px;
+  padding-right: $padding;
+
+  .execution-badge {
+    float: right;
+  }
+}
+
+#suites {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+@media screen and (max-width: 650px) {
+  #executions, #suites {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.icon-spinner {
+  background-image: url('../img/spinner.gif');
+}
+
+// ABN TREE
+.abn-tree-holder {
+  .abn-tree-animate-enter,
+  li.abn-tree-row.ng-enter {
+    transition: 200ms linear all;
+    position: relative;
+    display: block;
+    opacity: 0;
+    max-height: 0px;
+  }
+
+  .abn-tree-animate-enter.abn-tree-animate-enter-active,
+  li.abn-tree-row.ng-enter-active {
+    opacity: 1;
+    max-height: 30px;
+  }
+
+  .abn-tree-animate-leave,
+  li.abn-tree-row.ng-leave {
+    transition: 200ms linear all;
+    position: relative;
+    display: block;
+    height: 30px;
+    max-height: 30px;
+    opacity: 1;
+  }
+
+  .abn-tree-animate-leave.abn-tree-animate-leave-active,
+  li.abn-tree-row.ng-leave-active {
+    height: 0px;
+    max-height: 0px;
+    opacity: 0;
+  }
+
+  /*
+  ------------------------------------------
+  Angular 1.2.0 Animation
+  */
+
+  .abn-tree-animate.ng-enter {
+  }
+
+  .abn-tree-animate.ng-enter {
+  }
+
+  /*
+     end animation stuff
+  -----------------------------------------
+     begin normal css stuff
+  */
+
+  ul.nav.abn-tree {
+    cursor: pointer;
+
+    li {
+      &.abn-tree-row {
+        padding: 0px;
+        margin: 0px;
+        a {
+          padding: 3px 10px;
+        }
+
+        a.tree-action {
+          float: right;
+        }
+      }
+    }
+
+    i.indented {
+      padding: 2px;
+    }
+
+    .level-1 .indented {
+      position: relative;
+      left: 0px;
+    }
+
+    .level-2 .indented {
+      position: relative;
+      left: 20px;
+    }
+
+    .level-3 .indented {
+      position: relative;
+      left: 40px;
+    }
+
+    .level-4 .indented {
+      position: relative;
+      left: 60px;
+    }
+
+    .level-5 .indented {
+      position: relative;
+      left: 80px;
+    }
+
+    .level-6 .indented {
+      position: relative;
+      left: 80px;
+    }
+
+    .level-7 .indented {
+      position: relative;
+      left: 100px;
+    }
+
+    .level-8 .indented {
+      position: relative;
+      left: 120px;
+    }
+
+    .level-9 .indented {
+      position: relative;
+      left: 140px;
+    }
+  }
+}
+
+.nav > li {
+
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: #eee;
+  }
+
+  a {
+    display: inline-block;
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.form-control {
+  &.sentiment-1, &.sentiment-2 {
+    background-color: rgb(255, 188, 188);
+  }
+  &.sentiment-3, &.sentiment-4 {
+    background-color: darkseagreen;
+  }
+}
+

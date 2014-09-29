@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:gate="http://gate.ac.uk/ns/spring"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://gate.ac.uk/ns/spring http://gate.ac.uk/ns/spring.xsd">
+
+    <gate:init gate-home="file:/Users/dimapod/Development/iTrade/workspace/itrade-GATE-app/ta-service" run-in-sandbox="true" >
+    </gate:init>
+
+    <gate:duplicate id="theApp">
+        <gate:saved-application location="file:/Users/dimapod/Development/iTrade/workspace/itrade-GATE-app/ta-service/itrade-demo-4.gapp" />
+    </gate:duplicate>
+
+<!--
+    <bean id="processor"
+          class="gate.util.LanguageAnalyserDocumentProcessor">
+        <property name="analyser" ref="theApp" />
+        <gate:pooled-proxy max-size="5" />
+    </bean>
+-->
+
+    <bean id="iTradeDocumentProcessor" class="org.itrade.gate.ITradeDocumentProcessorImpl">
+        <property name="analyser" ref="theApp" />
+        <gate:pooled-proxy max-size="5" />
+    </bean>
+
+</beans>
+    
