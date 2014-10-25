@@ -46,7 +46,7 @@ public class AnalystManager {
         for (Document document: documents) {
             logger.info("-----------------------------------------------");
             logger.info("URL: {}", document.getSourceUrl().toString());
-            AnnotationSet annotations = documents.get(0).getAnnotations();
+            AnnotationSet annotations = document.getAnnotations();
             logger.info("ANNOTATIONS: {}", annotations.toString());
         }
     }
